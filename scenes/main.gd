@@ -11,8 +11,8 @@ func _process(delta: float) -> void:
 	if turn_taken:
 		for node in get_children():
 			if node is Actor:
-				#node.move(node.direction)
-				node.die()
+				node.move(node.direction)
+				#node.die()
 		turn_taken = false
 		
 		
