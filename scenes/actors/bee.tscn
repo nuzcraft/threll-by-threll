@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://3cdmrryv1o6x"]
+
+[ext_resource type="PackedScene" uid="uid://dtirkrjobpp0d" path="res://scenes/actors/actor.tscn" id="1_1q2x0"]
+
+[node name="Bee" instance=ExtResource("1_1q2x0")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+self_modulate = Color(0.956863, 0.705882, 0.105882, 1)
+frame_progress = 0.0

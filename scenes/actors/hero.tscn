@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdug4kjkr8yga"]
+
+[ext_resource type="PackedScene" uid="uid://dtirkrjobpp0d" path="res://scenes/actors/actor.tscn" id="1_3uyx6"]
+[ext_resource type="Script" uid="uid://16jy27oabdcc" path="res://scenes/actors/hero.gd" id="1_yvbpl"]
+[ext_resource type="SpriteFrames" uid="uid://ciw5evolelr86" path="res://resources/hero_sprite_frames.tres" id="2_yvbpl"]
+
+[node name="Hero" instance=ExtResource("1_3uyx6")]
+script = ExtResource("1_yvbpl")
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = ExtResource("2_yvbpl")
+frame_progress = 0.0
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

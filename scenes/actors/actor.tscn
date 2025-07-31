@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtirkrjobpp0d"]
+
+[ext_resource type="Script" uid="uid://c1422msupkl5m" path="res://scenes/actors/actor.gd" id="1_0qi0m"]
+[ext_resource type="SpriteFrames" uid="uid://b7v06ct7fo04x" path="res://resources/bee_sprite_frames.tres" id="1_x4c43"]
+
+[node name="Actor" type="Node2D"]
+script = ExtResource("1_0qi0m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_x4c43")
+frame_progress = 0.509887
